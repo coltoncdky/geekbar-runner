@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Geek Bar Runner</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+    }
+    canvas {
+      display: block;
+      margin: auto;
+      border: 2px solid #000;
+    }
+    #restartButton {
+      display: none;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 60px;
+      padding: 10px 20px;
+      background: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <button id="restartButton">Restart Game</button>
+  <canvas id="gameCanvas" width="800" height="400"></canvas>
+  <script src="game.js"></script>
+</body>
+</html>
